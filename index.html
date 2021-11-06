@@ -1,0 +1,124 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Cppcheck - HTML report - minesweeper-sdl</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+    </style>
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+  <body>
+    <div id="header" class="header">
+      <h1>Cppcheck report - minesweeper-sdl: </h1>
+    </div>
+    <div class="wrapper">
+      <div id="menu_index">
+       <p id="filename"><a href="index.html">Defect summary;</a> </p>
+
+       <label><input type="checkbox" onclick="toggleAll()" checked> Toggle all</label>
+       <table>
+           <tr><th>Show</th><th>#</th><th>Defect ID</th></tr>
+            <tr><td><input type="checkbox" onclick="toggleDisplay(this.id)" id="uninitMemberVar" name="uninitMemberVar" checked></td><td>60</td><td>uninitMemberVar</td></tr>
+            <tr><td><input type="checkbox" onclick="toggleDisplay(this.id)" id="passedByValue" name="passedByValue" checked></td><td>4</td><td>passedByValue</td></tr>
+            <tr><td><input type="checkbox" onclick="toggleDisplay(this.id)" id="constParameter" name="constParameter" checked></td><td>3</td><td>constParameter</td></tr>
+            <tr><td><input type="checkbox" onclick="toggleDisplay(this.id)" id="useInitializationList" name="useInitializationList" checked></td><td>2</td><td>useInitializationList</td></tr>
+            <tr><td><input type="checkbox" onclick="toggleDisplay(this.id)" id="missingIncludeSystem" name="missingIncludeSystem" checked></td><td>1</td><td>missingIncludeSystem</td></tr>
+           <tr><td></td><td>70</td><td>total</td></tr>
+       </table>
+       <p><a href="stats.html">Statistics</a></p>
+    </div>
+    <div id="content_index">
+
+       <table>
+       <tr><th>Line</th><th>Id</th><th>CWE</th><th>Severity</th><th>Message</th></tr>
+       <tr><td colspan="5"><a href="8.html"></a></td></tr>
+         <tr class="missingIncludeSystem"><td></td><td>missingIncludeSystem</td><td></td><td>information</td><td>Cppcheck cannot find all the include files (use --check-config for details)</td></tr>
+       <tr><td colspan="5"><a href="0.html">core.cpp</a></td></tr>
+         <tr class="uninitMemberVar"><td><a href="0.html#line-20">20</a></td><td>uninitMemberVar</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>warning</td><td>Member variable &apos;MinesweeperGUI::watch&apos; is not initialized in the constructor.</td></tr>
+         <tr class="uninitMemberVar"><td><a href="0.html#line-20">20</a></td><td>uninitMemberVar</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>warning</td><td>Member variable &apos;MinesweeperGUI::cells_status&apos; is not initialized in the constructor.</td></tr>
+         <tr class="uninitMemberVar"><td><a href="0.html#line-20">20</a></td><td>uninitMemberVar</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>warning</td><td>Member variable &apos;MinesweeperGUI::cells_uncovered_value&apos; is not initialized in the constructor.</td></tr>
+         <tr class="uninitMemberVar"><td><a href="0.html#line-20">20</a></td><td>uninitMemberVar</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>warning</td><td>Member variable &apos;MinesweeperGUI::count_opened_cells&apos; is not initialized in the constructor.</td></tr>
+         <tr class="uninitMemberVar"><td><a href="0.html#line-20">20</a></td><td>uninitMemberVar</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>warning</td><td>Member variable &apos;MinesweeperGUI::count_remaining_flags&apos; is not initialized in the constructor.</td></tr>
+         <tr class="uninitMemberVar"><td><a href="0.html#line-20">20</a></td><td>uninitMemberVar</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>warning</td><td>Member variable &apos;MinesweeperGUI::is_game_over&apos; is not initialized in the constructor.</td></tr>
+         <tr class="uninitMemberVar"><td><a href="0.html#line-20">20</a></td><td>uninitMemberVar</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>warning</td><td>Member variable &apos;MinesweeperGUI::is_game_won&apos; is not initialized in the constructor.</td></tr>
+         <tr class="uninitMemberVar"><td><a href="0.html#line-20">20</a></td><td>uninitMemberVar</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>warning</td><td>Member variable &apos;MinesweeperGUI::is_game_quit&apos; is not initialized in the constructor.</td></tr>
+         <tr class="uninitMemberVar"><td><a href="0.html#line-20">20</a></td><td>uninitMemberVar</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>warning</td><td>Member variable &apos;MinesweeperGUI::is_in_game&apos; is not initialized in the constructor.</td></tr>
+         <tr class="uninitMemberVar"><td><a href="0.html#line-20">20</a></td><td>uninitMemberVar</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>warning</td><td>Member variable &apos;MinesweeperGUI::IMG_COVERED&apos; is not initialized in the constructor.</td></tr>
+         <tr class="uninitMemberVar"><td><a href="0.html#line-20">20</a></td><td>uninitMemberVar</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>warning</td><td>Member variable &apos;MinesweeperGUI::IMG_COVERED_FLAGGED&apos; is not initialized in the constructor.</td></tr>
+         <tr class="uninitMemberVar"><td><a href="0.html#line-20">20</a></td><td>uninitMemberVar</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>warning</td><td>Member variable &apos;MinesweeperGUI::IMG_COVERED_MINE&apos; is not initialized in the constructor.</td></tr>
+         <tr class="uninitMemberVar"><td><a href="0.html#line-20">20</a></td><td>uninitMemberVar</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>warning</td><td>Member variable &apos;MinesweeperGUI::IMG_UNCOVERED_0&apos; is not initialized in the constructor.</td></tr>
+         <tr class="uninitMemberVar"><td><a href="0.html#line-20">20</a></td><td>uninitMemberVar</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>warning</td><td>Member variable &apos;MinesweeperGUI::IMG_UNCOVERED_1&apos; is not initialized in the constructor.</td></tr>
+         <tr class="uninitMemberVar"><td><a href="0.html#line-20">20</a></td><td>uninitMemberVar</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>warning</td><td>Member variable &apos;MinesweeperGUI::IMG_UNCOVERED_2&apos; is not initialized in the constructor.</td></tr>
+         <tr class="uninitMemberVar"><td><a href="0.html#line-20">20</a></td><td>uninitMemberVar</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>warning</td><td>Member variable &apos;MinesweeperGUI::IMG_UNCOVERED_3&apos; is not initialized in the constructor.</td></tr>
+         <tr class="uninitMemberVar"><td><a href="0.html#line-20">20</a></td><td>uninitMemberVar</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>warning</td><td>Member variable &apos;MinesweeperGUI::IMG_UNCOVERED_4&apos; is not initialized in the constructor.</td></tr>
+         <tr class="uninitMemberVar"><td><a href="0.html#line-20">20</a></td><td>uninitMemberVar</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>warning</td><td>Member variable &apos;MinesweeperGUI::IMG_UNCOVERED_5&apos; is not initialized in the constructor.</td></tr>
+         <tr class="uninitMemberVar"><td><a href="0.html#line-20">20</a></td><td>uninitMemberVar</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>warning</td><td>Member variable &apos;MinesweeperGUI::IMG_UNCOVERED_6&apos; is not initialized in the constructor.</td></tr>
+         <tr class="uninitMemberVar"><td><a href="0.html#line-20">20</a></td><td>uninitMemberVar</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>warning</td><td>Member variable &apos;MinesweeperGUI::IMG_UNCOVERED_7&apos; is not initialized in the constructor.</td></tr>
+         <tr class="uninitMemberVar"><td><a href="0.html#line-20">20</a></td><td>uninitMemberVar</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>warning</td><td>Member variable &apos;MinesweeperGUI::IMG_UNCOVERED_8&apos; is not initialized in the constructor.</td></tr>
+         <tr class="uninitMemberVar"><td><a href="0.html#line-20">20</a></td><td>uninitMemberVar</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>warning</td><td>Member variable &apos;MinesweeperGUI::IMG_UNCOVERED_EXPLODED&apos; is not initialized in the constructor.</td></tr>
+         <tr class="uninitMemberVar"><td><a href="0.html#line-20">20</a></td><td>uninitMemberVar</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>warning</td><td>Member variable &apos;MinesweeperGUI::IMG_UNCOVERED_INCORRECT_FLAGGED&apos; is not initialized in the constructor.</td></tr>
+         <tr class="uninitMemberVar"><td><a href="0.html#line-20">20</a></td><td>uninitMemberVar</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>warning</td><td>Member variable &apos;MinesweeperGUI::IMG_FACE&apos; is not initialized in the constructor.</td></tr>
+         <tr class="uninitMemberVar"><td><a href="0.html#line-20">20</a></td><td>uninitMemberVar</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>warning</td><td>Member variable &apos;MinesweeperGUI::IMG_HOME&apos; is not initialized in the constructor.</td></tr>
+         <tr class="uninitMemberVar"><td><a href="0.html#line-20">20</a></td><td>uninitMemberVar</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>warning</td><td>Member variable &apos;MinesweeperGUI::IMG_MINE&apos; is not initialized in the constructor.</td></tr>
+         <tr class="uninitMemberVar"><td><a href="0.html#line-20">20</a></td><td>uninitMemberVar</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>warning</td><td>Member variable &apos;MinesweeperGUI::IMG_WATCH&apos; is not initialized in the constructor.</td></tr>
+         <tr class="uninitMemberVar"><td><a href="0.html#line-20">20</a></td><td>uninitMemberVar</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>warning</td><td>Member variable &apos;MinesweeperGUI::remaining_flags&apos; is not initialized in the constructor.</td></tr>
+         <tr class="passedByValue"><td><a href="0.html#line-20">20</a></td><td>passedByValue</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>performance</td><td>Function parameter &apos;lvl&apos; should be passed by const reference.</td></tr>
+         <tr class="uninitMemberVar"><td><a href="0.html#line-51">51</a></td><td>uninitMemberVar</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>warning</td><td>Member variable &apos;MinesweeperGUI::watch&apos; is not initialized in the constructor.</td></tr>
+         <tr class="uninitMemberVar"><td><a href="0.html#line-51">51</a></td><td>uninitMemberVar</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>warning</td><td>Member variable &apos;MinesweeperGUI::cells_status&apos; is not initialized in the constructor.</td></tr>
+         <tr class="uninitMemberVar"><td><a href="0.html#line-51">51</a></td><td>uninitMemberVar</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>warning</td><td>Member variable &apos;MinesweeperGUI::cells_uncovered_value&apos; is not initialized in the constructor.</td></tr>
+         <tr class="uninitMemberVar"><td><a href="0.html#line-51">51</a></td><td>uninitMemberVar</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>warning</td><td>Member variable &apos;MinesweeperGUI::count_opened_cells&apos; is not initialized in the constructor.</td></tr>
+         <tr class="uninitMemberVar"><td><a href="0.html#line-51">51</a></td><td>uninitMemberVar</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>warning</td><td>Member variable &apos;MinesweeperGUI::count_remaining_flags&apos; is not initialized in the constructor.</td></tr>
+         <tr class="uninitMemberVar"><td><a href="0.html#line-51">51</a></td><td>uninitMemberVar</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>warning</td><td>Member variable &apos;MinesweeperGUI::is_game_over&apos; is not initialized in the constructor.</td></tr>
+         <tr class="uninitMemberVar"><td><a href="0.html#line-51">51</a></td><td>uninitMemberVar</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>warning</td><td>Member variable &apos;MinesweeperGUI::is_game_won&apos; is not initialized in the constructor.</td></tr>
+         <tr class="uninitMemberVar"><td><a href="0.html#line-51">51</a></td><td>uninitMemberVar</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>warning</td><td>Member variable &apos;MinesweeperGUI::is_game_quit&apos; is not initialized in the constructor.</td></tr>
+         <tr class="uninitMemberVar"><td><a href="0.html#line-51">51</a></td><td>uninitMemberVar</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>warning</td><td>Member variable &apos;MinesweeperGUI::is_in_game&apos; is not initialized in the constructor.</td></tr>
+         <tr class="uninitMemberVar"><td><a href="0.html#line-51">51</a></td><td>uninitMemberVar</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>warning</td><td>Member variable &apos;MinesweeperGUI::IMG_COVERED&apos; is not initialized in the constructor.</td></tr>
+         <tr class="uninitMemberVar"><td><a href="0.html#line-51">51</a></td><td>uninitMemberVar</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>warning</td><td>Member variable &apos;MinesweeperGUI::IMG_COVERED_FLAGGED&apos; is not initialized in the constructor.</td></tr>
+         <tr class="uninitMemberVar"><td><a href="0.html#line-51">51</a></td><td>uninitMemberVar</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>warning</td><td>Member variable &apos;MinesweeperGUI::IMG_COVERED_MINE&apos; is not initialized in the constructor.</td></tr>
+         <tr class="uninitMemberVar"><td><a href="0.html#line-51">51</a></td><td>uninitMemberVar</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>warning</td><td>Member variable &apos;MinesweeperGUI::IMG_UNCOVERED_0&apos; is not initialized in the constructor.</td></tr>
+         <tr class="uninitMemberVar"><td><a href="0.html#line-51">51</a></td><td>uninitMemberVar</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>warning</td><td>Member variable &apos;MinesweeperGUI::IMG_UNCOVERED_1&apos; is not initialized in the constructor.</td></tr>
+         <tr class="uninitMemberVar"><td><a href="0.html#line-51">51</a></td><td>uninitMemberVar</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>warning</td><td>Member variable &apos;MinesweeperGUI::IMG_UNCOVERED_2&apos; is not initialized in the constructor.</td></tr>
+         <tr class="uninitMemberVar"><td><a href="0.html#line-51">51</a></td><td>uninitMemberVar</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>warning</td><td>Member variable &apos;MinesweeperGUI::IMG_UNCOVERED_3&apos; is not initialized in the constructor.</td></tr>
+         <tr class="uninitMemberVar"><td><a href="0.html#line-51">51</a></td><td>uninitMemberVar</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>warning</td><td>Member variable &apos;MinesweeperGUI::IMG_UNCOVERED_4&apos; is not initialized in the constructor.</td></tr>
+         <tr class="uninitMemberVar"><td><a href="0.html#line-51">51</a></td><td>uninitMemberVar</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>warning</td><td>Member variable &apos;MinesweeperGUI::IMG_UNCOVERED_5&apos; is not initialized in the constructor.</td></tr>
+         <tr class="uninitMemberVar"><td><a href="0.html#line-51">51</a></td><td>uninitMemberVar</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>warning</td><td>Member variable &apos;MinesweeperGUI::IMG_UNCOVERED_6&apos; is not initialized in the constructor.</td></tr>
+         <tr class="uninitMemberVar"><td><a href="0.html#line-51">51</a></td><td>uninitMemberVar</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>warning</td><td>Member variable &apos;MinesweeperGUI::IMG_UNCOVERED_7&apos; is not initialized in the constructor.</td></tr>
+         <tr class="uninitMemberVar"><td><a href="0.html#line-51">51</a></td><td>uninitMemberVar</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>warning</td><td>Member variable &apos;MinesweeperGUI::IMG_UNCOVERED_8&apos; is not initialized in the constructor.</td></tr>
+         <tr class="uninitMemberVar"><td><a href="0.html#line-51">51</a></td><td>uninitMemberVar</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>warning</td><td>Member variable &apos;MinesweeperGUI::IMG_UNCOVERED_EXPLODED&apos; is not initialized in the constructor.</td></tr>
+         <tr class="uninitMemberVar"><td><a href="0.html#line-51">51</a></td><td>uninitMemberVar</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>warning</td><td>Member variable &apos;MinesweeperGUI::IMG_UNCOVERED_INCORRECT_FLAGGED&apos; is not initialized in the constructor.</td></tr>
+         <tr class="uninitMemberVar"><td><a href="0.html#line-51">51</a></td><td>uninitMemberVar</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>warning</td><td>Member variable &apos;MinesweeperGUI::IMG_FACE&apos; is not initialized in the constructor.</td></tr>
+         <tr class="uninitMemberVar"><td><a href="0.html#line-51">51</a></td><td>uninitMemberVar</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>warning</td><td>Member variable &apos;MinesweeperGUI::IMG_HOME&apos; is not initialized in the constructor.</td></tr>
+         <tr class="uninitMemberVar"><td><a href="0.html#line-51">51</a></td><td>uninitMemberVar</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>warning</td><td>Member variable &apos;MinesweeperGUI::IMG_MINE&apos; is not initialized in the constructor.</td></tr>
+         <tr class="uninitMemberVar"><td><a href="0.html#line-51">51</a></td><td>uninitMemberVar</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>warning</td><td>Member variable &apos;MinesweeperGUI::IMG_WATCH&apos; is not initialized in the constructor.</td></tr>
+         <tr class="uninitMemberVar"><td><a href="0.html#line-51">51</a></td><td>uninitMemberVar</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>warning</td><td>Member variable &apos;MinesweeperGUI::remaining_flags&apos; is not initialized in the constructor.</td></tr>
+         <tr class="useInitializationList"><td><a href="0.html#line-54">54</a></td><td>useInitializationList</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>performance</td><td>Variable &apos;level&apos; is assigned in constructor body. Consider performing initialization in initialization list.</td></tr>
+         <tr class="constParameter"><td><a href="0.html#line-588">588</a></td><td>constParameter</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>Parameter &apos;event&apos; can be declared with const</td></tr>
+       <tr><td colspan="5"><a href="1.html">label.cpp</a></td></tr>
+         <tr class="uninitMemberVar"><td><a href="1.html#line-10">10</a></td><td>uninitMemberVar</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>warning</td><td>Member variable &apos;Label::text_texture&apos; is not initialized in the constructor.</td></tr>
+         <tr class="passedByValue"><td><a href="1.html#line-10">10</a></td><td>passedByValue</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>performance</td><td>Function parameter &apos;txt&apos; should be passed by const reference.</td></tr>
+         <tr class="useInitializationList"><td><a href="1.html#line-13">13</a></td><td>useInitializationList</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>performance</td><td>Variable &apos;text&apos; is assigned in constructor body. Consider performing initialization in initialization list.</td></tr>
+         <tr class="passedByValue"><td><a href="1.html#line-28">28</a></td><td>passedByValue</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>performance</td><td>Function parameter &apos;new_text&apos; should be passed by const reference.</td></tr>
+         <tr class="passedByValue"><td><a href="1.html#line-32">32</a></td><td>passedByValue</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>performance</td><td>Function parameter &apos;alignment&apos; should be passed by const reference.</td></tr>
+       <tr><td colspan="5"><a href="2.html">main.cpp</a></td></tr>
+         <tr class="constParameter"><td><a href="2.html#line-303">303</a></td><td>constParameter</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>Parameter &apos;e&apos; can be declared with const</td></tr>
+         <tr class="constParameter"><td><a href="2.html#line-401">401</a></td><td>constParameter</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>Parameter &apos;e&apos; can be declared with const</td></tr>
+       <tr><td colspan="5"><a href="3.html">stopwatch.cpp</a></td></tr>
+         <tr class="uninitMemberVar"><td><a href="3.html#line-11">11</a></td><td>uninitMemberVar</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>warning</td><td>Member variable &apos;Stopwatch::text_texture&apos; is not initialized in the constructor.</td></tr>
+         <tr class="uninitMemberVar"><td><a href="3.html#line-11">11</a></td><td>uninitMemberVar</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>warning</td><td>Member variable &apos;Stopwatch::start_time&apos; is not initialized in the constructor.</td></tr>
+         <tr class="uninitMemberVar"><td><a href="3.html#line-11">11</a></td><td>uninitMemberVar</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>warning</td><td>Member variable &apos;Stopwatch::paused_time&apos; is not initialized in the constructor.</td></tr>
+       </table>
+      </div> <!-- /.wrapper -->
+    </div>
+    <div id="footer" class="footer">
+      <p>
+        Cppcheck 2.6 - a tool for static C/C++ code analysis<br>
+        <br>
+        Internet: <a href="https://cppcheck.sourceforge.io">https://cppcheck.sourceforge.io</a><br>
+        IRC: <a href="irc://irc.freenode.net/cppcheck">irc://irc.freenode.net/cppcheck</a><br>
+      </p>
+    </div>
+  </body>
+</html>
