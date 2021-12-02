@@ -1,0 +1,173 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Cppcheck - HTML report - minesweeper-sdl</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      pre {
+        font-size: 1rem;
+        overflow-wrap: break-word;
+        width: 80%;
+        white-space: pre-wrap;       /* Since CSS 2.1 */
+        white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+        white-space: -pre-wrap;      /* Opera 4-6 */
+        white-space: -o-pre-wrap;    /* Opera 7 */
+        word-wrap: break-word;       /* Internet Explorer 5.5+ */
+      }
+    </style>
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+  <body>
+    <div id="header" class="header">
+      <h1>Cppcheck report - minesweeper-sdl: false negative</h1>
+    </div>
+    <div class="wrapper">
+      <div id="menu_index">
+       <p id="filename"><a href="index.html">Defect summary;</a> </p>
+
+       <label><input type="checkbox" onclick="toggleAll()" checked> Toggle all</label>
+       <table>
+           <tr><th>Show</th><th>#</th><th>Defect ID</th></tr>
+            <tr><td><input type="checkbox" onclick="toggleDisplay(this.id)" id="uninitMemberVar" name="uninitMemberVar" checked></td><td>60</td><td>uninitMemberVar</td></tr>
+            <tr><td><input type="checkbox" onclick="toggleDisplay(this.id)" id="passedByValue" name="passedByValue" checked></td><td>4</td><td>passedByValue</td></tr>
+            <tr><td><input type="checkbox" onclick="toggleDisplay(this.id)" id="constParameter" name="constParameter" checked></td><td>3</td><td>constParameter</td></tr>
+            <tr><td><input type="checkbox" onclick="toggleDisplay(this.id)" id="useInitializationList" name="useInitializationList" checked></td><td>2</td><td>useInitializationList</td></tr>
+            <tr><td><input type="checkbox" onclick="toggleDisplay(this.id)" id="missingIncludeSystem" name="missingIncludeSystem" checked></td><td>1</td><td>missingIncludeSystem</td></tr>
+           <tr><td></td><td>70</td><td>total</td></tr>
+       </table>
+       <p><a href="stats.html">Statistics</a></p>
+    </div>
+    <div id="content_index">
+       <pre>
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;results version="2"&gt;
+  &lt;cppcheck version="2.6"/&gt;
+  &lt;errors&gt;
+    &lt;error id="missingIncludeSystem" severity="information" msg="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results."&gt;
+      &lt;location file="core.cpp" line="1" column="0"/&gt;
+    &lt;/error&gt;
+    &lt;error id="missingIncludeSystem" severity="information" msg="Include file: &lt;ctime&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;ctime&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results."&gt;
+      &lt;location file="core.cpp" line="2" column="0"/&gt;
+    &lt;/error&gt;
+    &lt;error id="missingIncludeSystem" severity="information" msg="Include file: &lt;queue&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;queue&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results."&gt;
+      &lt;location file="core.cpp" line="3" column="0"/&gt;
+    &lt;/error&gt;
+    &lt;error id="missingIncludeSystem" severity="information" msg="Include file: &lt;SDL2/SDL.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;SDL2/SDL.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results."&gt;
+      &lt;location file="core.h" line="4" column="0"/&gt;
+    &lt;/error&gt;
+    &lt;error id="missingIncludeSystem" severity="information" msg="Include file: &lt;SDL2/SDL_image.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;SDL2/SDL_image.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results."&gt;
+      &lt;location file="core.h" line="5" column="0"/&gt;
+    &lt;/error&gt;
+    &lt;error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results."&gt;
+      &lt;location file="core.h" line="6" column="0"/&gt;
+    &lt;/error&gt;
+    &lt;error id="missingIncludeSystem" severity="information" msg="Include file: &lt;queue&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;queue&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results."&gt;
+      &lt;location file="core.h" line="7" column="0"/&gt;
+    &lt;/error&gt;
+    &lt;error id="missingIncludeSystem" severity="information" msg="Include file: &lt;fstream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;fstream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results."&gt;
+      &lt;location file="core.h" line="8" column="0"/&gt;
+    &lt;/error&gt;
+    &lt;error id="missingIncludeSystem" severity="information" msg="Include file: &lt;SDL2/SDL.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;SDL2/SDL.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results."&gt;
+      &lt;location file="gui.h" line="4" column="0"/&gt;
+    &lt;/error&gt;
+    &lt;error id="missingIncludeSystem" severity="information" msg="Include file: &lt;SDL2/SDL_image.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;SDL2/SDL_image.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results."&gt;
+      &lt;location file="gui.h" line="5" column="0"/&gt;
+    &lt;/error&gt;
+    &lt;error id="missingIncludeSystem" severity="information" msg="Include file: &lt;cassert&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;cassert&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results."&gt;
+      &lt;location file="gui.h" line="6" column="0"/&gt;
+    &lt;/error&gt;
+    &lt;error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results."&gt;
+      &lt;location file="gui.h" line="7" column="0"/&gt;
+    &lt;/error&gt;
+    &lt;error id="missingIncludeSystem" severity="information" msg="Include file: &lt;SDL2/SDL.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;SDL2/SDL.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results."&gt;
+      &lt;location file="stopwatch.h" line="4" column="0"/&gt;
+    &lt;/error&gt;
+    &lt;error id="missingIncludeSystem" severity="information" msg="Include file: &lt;SDL2/SDL_ttf.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;SDL2/SDL_ttf.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results."&gt;
+      &lt;location file="stopwatch.h" line="5" column="0"/&gt;
+    &lt;/error&gt;
+    &lt;error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results."&gt;
+      &lt;location file="stopwatch.h" line="6" column="0"/&gt;
+    &lt;/error&gt;
+    &lt;error id="missingIncludeSystem" severity="information" msg="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results."&gt;
+      &lt;location file="stopwatch.h" line="7" column="0"/&gt;
+    &lt;/error&gt;
+    &lt;error id="missingIncludeSystem" severity="information" msg="Include file: &lt;SDL2/SDL.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;SDL2/SDL.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results."&gt;
+      &lt;location file="label.h" line="4" column="0"/&gt;
+    &lt;/error&gt;
+    &lt;error id="missingIncludeSystem" severity="information" msg="Include file: &lt;SDL2/SDL_ttf.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;SDL2/SDL_ttf.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results."&gt;
+      &lt;location file="label.h" line="5" column="0"/&gt;
+    &lt;/error&gt;
+    &lt;error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results."&gt;
+      &lt;location file="label.h" line="6" column="0"/&gt;
+    &lt;/error&gt;
+    &lt;error id="missingIncludeSystem" severity="information" msg="Include file: &lt;SDL2/SDL.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;SDL2/SDL.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results."&gt;
+      &lt;location file="gui.cpp" line="1" column="0"/&gt;
+    &lt;/error&gt;
+    &lt;error id="missingIncludeSystem" severity="information" msg="Include file: &lt;SDL2/SDL_image.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;SDL2/SDL_image.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results."&gt;
+      &lt;location file="gui.cpp" line="2" column="0"/&gt;
+    &lt;/error&gt;
+    &lt;error id="missingIncludeSystem" severity="information" msg="Include file: &lt;cstdio&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;cstdio&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results."&gt;
+      &lt;location file="gui.cpp" line="3" column="0"/&gt;
+    &lt;/error&gt;
+    &lt;error id="missingIncludeSystem" severity="information" msg="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results."&gt;
+      &lt;location file="gui.cpp" line="4" column="0"/&gt;
+    &lt;/error&gt;
+    &lt;error id="missingIncludeSystem" severity="information" msg="Include file: &lt;cassert&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;cassert&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results."&gt;
+      &lt;location file="gui.cpp" line="5" column="0"/&gt;
+    &lt;/error&gt;
+    &lt;error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results."&gt;
+      &lt;location file="gui.cpp" line="6" column="0"/&gt;
+    &lt;/error&gt;
+    &lt;error id="missingIncludeSystem" severity="information" msg="Include file: &lt;SDL2/SDL.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;SDL2/SDL.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results."&gt;
+      &lt;location file="label.cpp" line="1" column="0"/&gt;
+    &lt;/error&gt;
+    &lt;error id="missingIncludeSystem" severity="information" msg="Include file: &lt;SDL2/SDL_ttf.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;SDL2/SDL_ttf.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results."&gt;
+      &lt;location file="label.cpp" line="2" column="0"/&gt;
+    &lt;/error&gt;
+    &lt;error id="missingIncludeSystem" severity="information" msg="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results."&gt;
+      &lt;location file="label.cpp" line="3" column="0"/&gt;
+    &lt;/error&gt;
+    &lt;error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results."&gt;
+      &lt;location file="label.cpp" line="4" column="0"/&gt;
+    &lt;/error&gt;
+    &lt;error id="missingIncludeSystem" severity="information" msg="Include file: &lt;SDL2/SDL.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;SDL2/SDL.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results."&gt;
+      &lt;location file="main.cpp" line="1" column="0"/&gt;
+    &lt;/error&gt;
+    &lt;error id="missingIncludeSystem" severity="information" msg="Include file: &lt;SDL2/SDL_image.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;SDL2/SDL_image.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results."&gt;
+      &lt;location file="main.cpp" line="2" column="0"/&gt;
+    &lt;/error&gt;
+    &lt;error id="missingIncludeSystem" severity="information" msg="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results."&gt;
+      &lt;location file="main.cpp" line="3" column="0"/&gt;
+    &lt;/error&gt;
+    &lt;error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results."&gt;
+      &lt;location file="main.cpp" line="4" column="0"/&gt;
+    &lt;/error&gt;
+    &lt;error id="missingIncludeSystem" severity="information" msg="Include file: &lt;SDL2/SDL.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;SDL2/SDL.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results."&gt;
+      &lt;location file="stopwatch.cpp" line="1" column="0"/&gt;
+    &lt;/error&gt;
+    &lt;error id="missingIncludeSystem" severity="information" msg="Include file: &lt;SDL2/SDL_ttf.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;SDL2/SDL_ttf.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results."&gt;
+      &lt;location file="stopwatch.cpp" line="2" column="0"/&gt;
+    &lt;/error&gt;
+    &lt;error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results."&gt;
+      &lt;location file="stopwatch.cpp" line="3" column="0"/&gt;
+    &lt;/error&gt;
+    &lt;error id="missingIncludeSystem" severity="information" msg="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results."&gt;
+      &lt;location file="stopwatch.cpp" line="4" column="0"/&gt;
+    &lt;/error&gt;
+  &lt;/errors&gt;
+&lt;/results&gt;
+       </pre>
+      </div> <!-- /.wrapper -->
+    </div>
+    <div id="footer" class="footer">
+      <p>
+        Cppcheck 2.6 - a tool for static C/C++ code analysis<br>
+        <br>
+        Internet: <a href="https://cppcheck.sourceforge.io">https://cppcheck.sourceforge.io</a><br>
+        IRC: <a href="irc://irc.freenode.net/cppcheck">irc://irc.freenode.net/cppcheck</a><br>
+      </p>
+    </div>
+  </body>
+</html>
